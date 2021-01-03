@@ -10,7 +10,7 @@ import MapScreen from '../screens/MapScreen';
 
 import Colors from '../constants/Colors';
 
-const PlacesNaviator = createStackNavigator({
+const PlacesNavigator = createStackNavigator({
   Places: PlacesListScreen,
   PlaceDetail: PlaceDetailScreen,
   NewPlace: NewPlaceScreen,
@@ -18,9 +18,9 @@ const PlacesNaviator = createStackNavigator({
 },{
   defaultNavigationOptions: {
     headerStyle: {
-      backgroundColor: Platform.OS === 'android' ? Colors.primary : '';
+      backgroundColor: Platform.OS === 'android' ? Colors.primary : ''
     },
-    headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary;
+    headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
   }
 });
 
