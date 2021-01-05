@@ -20,7 +20,7 @@ const PlaceDetailScreen = props => {
 
   return (
     <ScrollView contentContainerStyle={{alignItems: 'center' }}>
-      <Image source={{uri: selectedPlace.imageUri}} style={styles.image}/>
+
       <View style={styles.locationContainer}>
         <View style={styles.addressContainer}><Text style={styles.address}>{selectedPlace.address}</Text></View>
         <MapPreview
@@ -28,6 +28,7 @@ const PlaceDetailScreen = props => {
           location={selectedLocation}
           onPress={showMapHander}
         />
+        <Image source={{uri: selectedPlace.imageUri}} style={styles.image}/>
       </View>
     </ScrollView>
 
